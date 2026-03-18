@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UMT Login Page</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body 
+{
+    height: 100vh;
+    background: url("https://sktlms.umt.edu.pk/moodle/pluginfile.php/1/theme_moove/loginbgimg/1765947176/SKT-LMS%20LoginPage%204.jpg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo 
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img 
+{
+    width: 110px;
+    opacity: 0.9;
+}
+
+.estd 
+{
+    text-align: center;
+    color: #1f6fa5;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.login-box 
+{
+    background: #fff;
+    padding: 35px;
+    width: 420px;
+    /*width: 986.016px;*/
+    text-align: left;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.login-box h2 
+{
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 400;
+    font-size: 19.2px; 
+}
+
+.input-group 
+{
+    display: flex;
+    margin-bottom: 15px;
+    height: 42px;
+}
+
+.icon-box 
+{
+    width: 42px;
+    background: #e5e5e5;
+    border: 1px solid #ccc;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-size: 14px;
+}
+
+.input-group input 
+{
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    outline: none;
+    background: #eeeeee;
+    font-size: 15px;   
+}
+
+.checkbox 
+{
+    text-align: left;
+    margin: 10px 0 15px;
+    font-size: 15px;
+    color: #333;
+}
+
+.btn 
+{
+    width: 100%;
+    padding: 11px;
+    background: #0381aa;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover 
+{
+    background: #266b74;
+}
+
+.forgot 
+{
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.forgot a 
+{
+    color: #0381aa;
+    text-decoration: none;
+}
+
+.forgot a:hover 
+{
+    text-decoration: underline;
+}
+
+.container 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">
+    <img src="https://sktlms.umt.edu.pk/moodle/pluginfile.php/1/core_admin/logo/0x200/1765947176/umt%20logo%202020.png">
+</div>
+
+<div class="login-box">
+    <h2>Already have an account?</h2>
+
+    <div class="input-group">
+        <div class="icon-box">
+            <i class="fa fa-user-circle"></i>
+        </div>
+        <input type="text" placeholder="Username">
+    </div>
+
+    <div class="input-group">
+        <div class="icon-box">
+            <i class="fa fa-lock"></i>
+        </div>
+        <input type="password" placeholder="Password">
+    </div>
+
+    <div class="checkbox">
+        <input type="checkbox"> Remember username
+    </div>
+
+    <button class="btn"> Log in </button>
+
+    <div class="forgot">
+        <a href="#">Forgotten your username or password?</a>
+    </div>
+</div>
+
+</body>
+</html>
